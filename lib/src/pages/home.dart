@@ -89,6 +89,7 @@ class _HomePageState extends State<HomePage> {
             Center(
               child: Container(
                 height: windowHeight * 0.87,
+                width: windowWidth,
                 child: TinderSwapCard(
                   swipeUp: false,
                   swipeDown: false,
@@ -96,9 +97,9 @@ class _HomePageState extends State<HomePage> {
                   totalNum: welcomeImages.length,
                   stackNum: 3,
                   swipeEdge: 4.0,
-                  maxWidth: windowWidth,
+                  maxWidth: windowWidth*0.97,
                   maxHeight: windowHeight * 0.93,
-                  minWidth: windowWidth * 0.93,
+                  minWidth: windowWidth * 0.9,
                   minHeight: windowHeight * 0.89,
                   cardBuilder: (context, index) => _card(index),
                   cardController: controller = CardController(),

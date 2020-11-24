@@ -49,33 +49,42 @@ class _FloatingTabBarState extends State<FloatingTabBar> {
           ),
         ));
   }
-  
+
   Widget _buildFloatingBar() {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final screenHeight = MediaQuery.of(context).size.height;
+    final tabBarwidth = screenWidth * 0.92;
+    final tabBarHieght = screenHeight * 0.095;
     return Container(
-      width: MediaQuery.of(context).size.width * 0.92,
-      height: MediaQuery.of(context).size.height * 0.095,
+      width: tabBarwidth,
+      height: tabBarHieght,
       child: Card(
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20.0),
         ),
-        color: Color.fromRGBO(255, 255, 255, 0.2),
+        color: Color.fromRGBO(0, 0, 0, 0.5),
         child: ClipRect(
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 0.9, sigmaY: 0.9),
+            filter: ImageFilter.blur(sigmaX: 0.5, sigmaY: 0.5),
             child: InkWell(
               child: Container(
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(5, 2, 5, 2),
                   child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       ButtonBar(
                         children: <Widget>[
                           Padding(
-                            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                            padding: EdgeInsets.fromLTRB(
+                                tabBarwidth * 0.03, 0, tabBarwidth * 0.035, 0),
                             child: IconButton(
                               icon: FaIcon(FontAwesomeIcons.home),
-                              color: _selectedTab==0?_selectedColor:Colors.white,
+                              color: _selectedTab == 0
+                                  ? _selectedColor
+                                  : Colors.white,
                               onPressed: () {
                                 setState(() {
                                   _selectedTab = 0;
@@ -87,10 +96,13 @@ class _FloatingTabBarState extends State<FloatingTabBar> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                            padding: EdgeInsets.fromLTRB(
+                                tabBarwidth * 0.035, 0, tabBarwidth * 0.035, 0),
                             child: IconButton(
                               icon: FaIcon(FontAwesomeIcons.search),
-                              color: _selectedTab==1?_selectedColor:Colors.white,
+                              color: _selectedTab == 1
+                                  ? _selectedColor
+                                  : Colors.white,
                               onPressed: () {
                                 setState(() {
                                   _selectedTab = 1;
@@ -102,10 +114,13 @@ class _FloatingTabBarState extends State<FloatingTabBar> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                            padding: EdgeInsets.fromLTRB(
+                                tabBarwidth * 0.035, 0, tabBarwidth * 0.035, 0),
                             child: IconButton(
                               icon: FaIcon(FontAwesomeIcons.bell),
-                              color: _selectedTab==2?_selectedColor:Colors.white,
+                              color: _selectedTab == 2
+                                  ? _selectedColor
+                                  : Colors.white,
                               onPressed: () {
                                 setState(() {
                                   _selectedTab = 2;
@@ -117,10 +132,13 @@ class _FloatingTabBarState extends State<FloatingTabBar> {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                            padding: EdgeInsets.fromLTRB(
+                                tabBarwidth * 0.035, 0, tabBarwidth * 0.035, 0),
                             child: IconButton(
                               icon: FaIcon(FontAwesomeIcons.user),
-                              color: _selectedTab==3?_selectedColor:Colors.white,
+                              color: _selectedTab == 3
+                                  ? _selectedColor
+                                  : Colors.white,
                               onPressed: () {
                                 setState(() {
                                   _selectedTab = 3;
@@ -140,8 +158,6 @@ class _FloatingTabBarState extends State<FloatingTabBar> {
             ),
           ),
         ),
-        
-        
       ),
     );
   }
