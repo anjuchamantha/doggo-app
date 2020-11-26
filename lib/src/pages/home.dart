@@ -79,16 +79,16 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("lib/src/assets/images/Home-background.jpg"),
+            image: AssetImage("lib/src/assets/images/Home-background-1.jpg"),
             fit: BoxFit.fill,
           ),
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(height: windowHeight * 0.13),
+            SizedBox(height: windowHeight * 0.14),
             Center(
               child: Container(
-                height: windowHeight * 0.87,
+                height: windowHeight * 0.86,
                 width: windowWidth,
                 child: TinderSwapCard(
                   swipeUp: false,
@@ -136,7 +136,6 @@ class _HomePageState extends State<HomePage> {
         fit: StackFit.expand,
         children: <Widget>[
           Image.asset('${welcomeImages[index]}', fit: BoxFit.cover),
-
           // video controller
           // Expanded(
           //   child: Center(

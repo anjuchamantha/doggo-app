@@ -63,7 +63,7 @@ class _FloatingTabBarState extends State<FloatingTabBar> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20.0),
         ),
-        color: Color.fromRGBO(0, 0, 0, 0.5),
+        color: Color.fromRGBO(255, 255, 255, 0.1),
         child: ClipRect(
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 0.5, sigmaY: 0.5),

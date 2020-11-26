@@ -64,4 +64,28 @@ class AppFonts{
     height: 0.9,
     color: Colors.white,
   );
+  static const TextStyle searchCardName = TextStyle( // h4 -> display1
+    fontFamily: 'Nunito',
+    fontWeight: FontWeight.bold,
+    fontSize: 16,
+    letterSpacing: 0.4,
+    height: 0.9,
+    color: Colors.white,
+  );
+  static const TextStyle smallTitles = TextStyle( // h4 -> display1
+    fontFamily: 'Nunito',
+    fontWeight: FontWeight.bold,
+    fontSize: 26,
+    letterSpacing: 0.4,
+    height: 0.9,
+    color: Colors.white,
+  );
+  static const TextStyle smallSubTitles = TextStyle( // h4 -> display1
+    fontFamily: 'Nunito',
+    fontWeight: FontWeight.normal,
+    fontSize: 20,
+    letterSpacing: 0.4,
+    height: 0.9,
+    color: Colors.white,
+  );
 }

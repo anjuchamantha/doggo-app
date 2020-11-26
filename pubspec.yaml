@@ -35,6 +35,7 @@ dependencies:
   font_awesome_flutter: ^8.10.0
   chewie: ^0.12.0
   video_player: ^1.0.1
+  material_floating_search_bar: ^0.2.3
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +63,8 @@ flutter:
     - lib/src/assets/images/Image3.jpg
     - lib/src/assets/images/Image4.jpg
     - lib/src/assets/images/Home-background.jpg
+    - lib/src/assets/images/Home-background-1.jpg
+    - lib/src/assets/images/Home-background-2.png
     - lib/src/assets/videos/video1.mp4
     
   # The following line ensures that the Material Icons font is

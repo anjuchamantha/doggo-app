@@ -10,7 +10,6 @@ class ProfilePage extends StatefulWidget {
 }
 
 class _ProfilePageState extends State<ProfilePage> {
-
   @override
   Widget build(BuildContext context) {
     final windowHeight = MediaQuery.of(context).size.height;
@@ -22,12 +21,12 @@ class _ProfilePageState extends State<ProfilePage> {
         //Back gradient
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("lib/src/assets/images/Home-background.jpg"),
+            image: AssetImage("lib/src/assets/images/Home-background-1.jpg"),
             fit: BoxFit.cover,
           ),
         ),
-        child:SingleChildScrollView(
-          child:Column(
+        child: SingleChildScrollView(
+          child: Column(
             children: <Widget>[
               SizedBox(height: windowHeight * 0.14),
               Row(
@@ -35,9 +34,10 @@ class _ProfilePageState extends State<ProfilePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Center(
-                    child: Container( //top section
+                    child: Container(
+                      //top section
                       // color: Colors.white,
-                      height: windowHeight*0.37,
+                      height: windowHeight * 0.32,
                       width: windowWidth,
                       child: Column(
                         children: <Widget>[
@@ -51,11 +51,12 @@ class _ProfilePageState extends State<ProfilePage> {
                                     padding: EdgeInsets.all(12.0),
                                     child: Container(
                                       // color: Colors.green,
-                                      width: windowWidth*0.3,
+                                      width: windowWidth * 0.3,
                                       // alignment: Alignment.center,
                                       child: CircleAvatar(
                                         radius: 50,
-                                        backgroundImage: AssetImage('lib/src/assets/images/Image4.jpg'),
+                                        backgroundImage: AssetImage(
+                                            'lib/src/assets/images/Image4.jpg'),
                                       ),
                                     ),
                                   ),
@@ -66,7 +67,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           Padding(
                             padding: EdgeInsets.all(12.0),
                             child: Container(
-                              width: windowWidth*0.6,
+                              width: windowWidth * 0.6,
                               alignment: Alignment.center,
                               child: Text(
                                 "Alexa A. Williams",
@@ -77,7 +78,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           Padding(
                             padding: EdgeInsets.all(3.0),
                             child: Container(
-                              width: windowWidth*0.6,
+                              width: windowWidth * 0.6,
                               alignment: Alignment.center,
                               child: Text(
                                 "Actor | Pet lover | Karma believer Follow for awesome content <3",
@@ -90,7 +91,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             padding: EdgeInsets.all(8.0),
                             child: Container(
                               // color: Colors.green,
-                              width: windowWidth*0.75,
+                              width: windowWidth * 0.75,
                               alignment: Alignment.center,
                               child: Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -101,7 +102,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       Padding(
                                         padding: EdgeInsets.all(2.0),
                                         child: Container(
-                                          width: windowWidth*0.2,
+                                          width: windowWidth * 0.2,
                                           alignment: Alignment.center,
                                           child: Text(
                                             "40.3K",
@@ -113,7 +114,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       Padding(
                                         padding: EdgeInsets.all(2.0),
                                         child: Container(
-                                          width: windowWidth*0.2,
+                                          width: windowWidth * 0.2,
                                           alignment: Alignment.center,
                                           child: Text(
                                             "FOLLOWERS",
@@ -129,7 +130,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       Padding(
                                         padding: EdgeInsets.all(2.0),
                                         child: Container(
-                                          width: windowWidth*0.2,
+                                          width: windowWidth * 0.2,
                                           alignment: Alignment.center,
                                           child: Text(
                                             "100M",
@@ -141,7 +142,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       Padding(
                                         padding: EdgeInsets.all(2.0),
                                         child: Container(
-                                          width: windowWidth*0.2,
+                                          width: windowWidth * 0.2,
                                           alignment: Alignment.center,
                                           child: Text(
                                             "LIKES",
@@ -157,7 +158,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       Padding(
                                         padding: EdgeInsets.all(2.0),
                                         child: Container(
-                                          width: windowWidth*0.2,
+                                          width: windowWidth * 0.2,
                                           alignment: Alignment.center,
                                           child: Text(
                                             "40",
@@ -169,7 +170,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       Padding(
                                         padding: EdgeInsets.all(2.0),
                                         child: Container(
-                                          width: windowWidth*0.2,
+                                          width: windowWidth * 0.2,
                                           alignment: Alignment.center,
                                           child: Text(
                                             "VIDS",
@@ -179,7 +180,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                         ),
                                       ),
                                     ],
-                                  ),  
+                                  ),
                                 ],
                               ),
                             ),
@@ -200,63 +201,11 @@ class _ProfilePageState extends State<ProfilePage> {
                 children: <Widget>[
                   Column(
                     children: <Widget>[
-                      Row(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Container(
-                              height: windowHeight*0.3,
-                              width: windowHeight*0.3,
-                              decoration: BoxDecoration(
-                                color: const Color(0xff7c94b6),
-                                image: const DecorationImage(
-                                  image: AssetImage('lib/src/assets/images/Image1.jpg'),
-                                  fit: BoxFit.cover,
-                                ),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Container(
-                              height: windowHeight*0.3,
-                              width: windowHeight*0.3,
-                              decoration: BoxDecoration(
-                                color: const Color(0xff7c94b6),
-                                image: const DecorationImage(
-                                  image: AssetImage('lib/src/assets/images/Image3.jpg'),
-                                  fit: BoxFit.cover,
-                                ),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.all(4.0),
-                            child:Container(
-                              height: windowHeight*0.3,
-                              width: windowHeight*0.3,
-                              decoration: BoxDecoration(
-                                color: const Color(0xff7c94b6),
-                                image: const DecorationImage(
-                                  image: AssetImage('lib/src/assets/images/Image3.jpg'),
-                                  fit: BoxFit.cover,
-                                ),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                      _myVideos(windowHeight, windowWidth),
+                      _myVideos(windowHeight, windowWidth),
+                      _myVideos(windowHeight, windowWidth),
+                      _myVideos(windowHeight, windowWidth),
+                      _myVideos(windowHeight, windowWidth),
                     ],
                   ),
                 ],
@@ -264,7 +213,84 @@ class _ProfilePageState extends State<ProfilePage> {
             ],
           ),
         ),
-      ),   
+      ),
+    );
+  }
+
+  Widget _myVideos(windowHeight,windowWidth) {
+    return Row(
+      children: [
+        Padding(
+          padding: EdgeInsets.all(4.0),
+          child: Stack(
+            children: [
+              Container(
+                height: windowHeight * 0.3,
+                width: windowHeight * 0.2,
+                decoration: BoxDecoration(
+                  color: const Color(0xff7c94b6),
+                  image: const DecorationImage(
+                    image: AssetImage('lib/src/assets/images/Image1.jpg'),
+                    fit: BoxFit.cover,
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              Container(
+                height: windowHeight * 0.3,
+                width: windowHeight * 0.2,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  gradient: LinearGradient(
+                    begin: FractionalOffset.bottomRight,
+                    end: FractionalOffset.center,
+                    colors: [
+                      Colors.black.withOpacity(0.9),
+                      Colors.black.withOpacity(0.2),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(4.0),
+          child: Stack(
+            children: [
+              Container(
+                height: windowHeight * 0.3,
+                width: windowHeight * 0.2,
+                decoration: BoxDecoration(
+                  color: const Color(0xff7c94b6),
+                  image: const DecorationImage(
+                    image: AssetImage('lib/src/assets/images/Image2.jpg'),
+                    fit: BoxFit.cover,
+                  ),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              Container(
+                height: windowHeight * 0.3,
+                width: windowHeight * 0.2,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(12),
+                  gradient: LinearGradient(
+                    begin: FractionalOffset.bottomRight,
+                    end: FractionalOffset.center,
+                    colors: [
+                      Colors.black.withOpacity(0.9),
+                      Colors.black.withOpacity(0.2),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
